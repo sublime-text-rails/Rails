@@ -1,0 +1,22 @@
+{
+  "scope": "source.rb, source.ruby",
+  "completions":
+  [
+    {
+      "trigger": "def … end\t ruby block",
+      "contents": "def ${1:method_name}\n  $0\nend"
+    },
+    {
+      "trigger": "def self end\t ruby block",
+      "contents": "def self.${1:class_method_name}\n  $0\nend"
+    },
+    {
+      "trigger": "if … else … end\t ruby block",
+      "contents": "if ${1:condition}\n  $2\nelse\n  $3\nend"
+    },
+    {
+      "trigger": "if … end\t ruby block",
+      "contents": "if ${1:condition}\n  $0\nend"
+    }
+  ]
+}
