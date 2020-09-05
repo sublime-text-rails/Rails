@@ -1,2 +1,2 @@
 # Rails
- Overides the default Rails language pack.
+Kills all the outdated Rails snippets that ship with Sublime Text 3, and provides new completions package.
