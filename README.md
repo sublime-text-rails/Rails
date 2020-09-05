@@ -1,2 +1,7 @@
 # Sublime Text 3 - Rails Pack
-Kills all the outdated Rails snippets that ship with Sublime Text 3, and provides new completions package.
+
+## Makes Sublime Text 3 better than VS Code for rails development.
+
+- Kills the outdated default Rails snippets.
+- Adds new up-to-date Rails completions.
+- Adds new ERB code completions.
