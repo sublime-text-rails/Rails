@@ -18,7 +18,7 @@ Unlike the Rails auto-completion used in VS Code, you can't insert ERB tags into
 - Click `Sublime Preferences` and choose `Browse Packages`.
 - Drag and drop the freshly cloned reop into the `Packages` folder.
 
-- Repeat the above process with the `Ruby` repo found here.
+- Repeat the above process with the `Ruby` repo found [here](https://github.com/sublime-text-rails/Ruby).
 - Restart Sublime Text.
 
 Because this `Rails` repo and its `Ruby` equilvelent were cloned directly from GitHub and placed in the `Packages` folder you can update using these using typical git version control, creating your own branch, and merging changes from the master back into your custom verion, or simply keep up to date from the master.
