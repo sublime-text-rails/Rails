@@ -2,9 +2,50 @@
   "scope": "source.rb, source.ruby",
   "completions":
   [
-    {"trigger": "def … end\t ruby block", "contents": "def ${1:method_name}\n  $0\nend"},
-    {"trigger": "def self end\t ruby block", "contents": "def self.${1:class_method_name}\n  $0\nend"},
-    {"trigger": "if … else … end\t ruby block", "contents": "if ${1:condition}\n  $2\nelse\n  $3\nend"},
-    {"trigger": "if … end\t ruby block", "contents": "if ${1:condition}\n  $0\nend"}
+    // A
+    {"trigger": "attr-accessor\t \truby-method", "contents": "attr_accessor :${0:attribute_name}"},
+    {"trigger": "attr-reader\t \truby-method", "contents": "attr_reader :${0:attribute_name}"},
+    {"trigger": "attr-writer\t \truby-method", "contents": "attr_writer :${0:attribute_name}"},
+
+    // B
+    // C
+    {"trigger": "collect\t \truby-method", "contents": "collect { |${1:i}| ${2:i*i} }"},
+    // D
+    //{"trigger": "def-end\t \truby-block", "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend"},
+    {"trigger": "def-end\t \truby-block", "contents": "def ${1:self.}${2:class_method_name}${3:(${4:args})}\n  $0\nend"},
+
+    // E
+    {"trigger": "else\t \truby-method", "contents": "else"},
+    {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}"},
+
+    // F
+    {"trigger": "find\t \truby-method", "contents": "find(${1::id})"},
+    // G
+    // H
+    // I
+    {"trigger": "if-end\t \truby-block", "contents": "if ${1:condition}\n  $0\nend"},
+    {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})"},
+
+    // J
+    // K
+    // L
+    {"trigger": "length\t \truby-method", "contents": "length"},
+    // M
+    {"trigger": "map\t \truby-method", "contents": "map { |${1:i}| ${2:i*i} }"},
+    // N
+    // O
+    // P
+    {"trigger": "private\t \truby-method", "contents": "private"},
+    {"trigger": "protected\t \truby-method", "contents": "protected"},
+    // Q
+    // R
+    // S
+    // T
+    // U
+    // V
+    // W
+    // X
+    // Y
+    // Z
   ]
 }

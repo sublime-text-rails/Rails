@@ -3,12 +3,12 @@
   "completions":
   [
     // A
-    {"trigger": "around-create\t \trails method", "contents": "around_create :${1:method}"},
-    {"trigger": "around-save\t \trails method", "contents": "around_save :${1:method}"},
-    {"trigger": "around-update\t \trails method", "contents": "around_update :${1:method}"},
-    {"trigger": "around-destroy\t \trails method", "contents": "around_destroy :${1:method}"},
-    {"trigger": "after-commit\t \trails method", "contents": "after_commit :${1:method}"},
-    {"trigger": "after-create\t \trails method", "contents": "after_create :${1:method}"},
+    {"trigger": "around-create\t \trails-method", "contents": "around_create :${1:method}"},
+    {"trigger": "around-save\t \trails-method", "contents": "around_save :${1:method}"},
+    {"trigger": "around-update\t \trails-method", "contents": "around_update :${1:method}"},
+    {"trigger": "around-destroy\t \trails-method", "contents": "around_destroy :${1:method}"},
+    {"trigger": "after-commit\t \trails-method", "contents": "after_commit :${1:method}"},
+    {"trigger": "after-create\t \trails-method", "contents": "after_create :${1:method}"},
     {"trigger": "after-create-commit\t \trails method", "contents": "after_create_commit :"},
     {"trigger": "after-destroy\t \trails method", "contents": "after_destroy :"},
     {"trigger": "after-destroy-commit\t \trails method", "contents": "after_destroy_commit :"},
