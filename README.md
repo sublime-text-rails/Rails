@@ -1,12 +1,13 @@
 # Sublime Text 3 - Rails Pack
 Makes Sublime Text 3 better than VS Code for rails development.
 
-## How?
-This reop allows you to:
+## Better Than VS Code For Rails, How?
 
-- Kills the outdated default Rails snippets.
-- Adds new up-to-date Rails completions.
-- Adds new ERB code completions.
+First, the contents of this repo:
+
+- Kill the outdated default Rails snippets.
+- Add new up-to-date Rails completions.
+- Add new ERB code completions.
 
 Unlike the Rails auto-completions in VS Code, you can't insert ERB into a model file, better still our completions provide model and controller specific completions.
 
