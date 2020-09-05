@@ -11,7 +11,7 @@ The contents of this repo can be used to kill the default Ruby and Rails autocom
 - Adds new Ruby code completions.
 - Adds new ERB code completions.
 
-Unlike the Rails auto-completion used in VS Code, you can't insert ERB into a model or controller file, and better still the Rails completions in this repo are controller or model specific where required, making Visual Studio Code IntelliSense look inferior.
+Unlike the Rails auto-completion used in VS Code, you can't insert ERB tags into a model or controller file by mistake, and better still the Rails completions in this repo are controller or model specific where required, making Visual Studio Code IntelliSense look inferior.
 
 ## Usage
 - Clone this repo to your desktop.
