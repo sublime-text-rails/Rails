@@ -3,16 +3,49 @@
   "completions":
   [
     // A
-    {"trigger": "attr-accessor\t \truby-method", "contents": "attr_accessor :${1:attribute_name}"},
-    {"trigger": "attr-reader\t \truby-method", "contents": "attr_reader :${1:attribute_name}"},
-    {"trigger": "attr-writer\t \truby-method", "contents": "attr_writer :${1:attribute_name}"},
+    {
+      "trigger": "attr-accessor",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_accessor :${1:attribute_name}",
+      "details": "attr_accessor :attribute_name"
+    },
+    {
+      "trigger": "attr-reader",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_reader :${1:attribute_name}",
+      "details": "attr_reader :attribute_name"
+    },
+    {
+      "trigger": "attr-writer",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_writer :${1:attribute_name}",
+      "details": "attr_writer :attribute_name"
+    },
 
     // B
     // C
-    {"trigger": "collect\t \truby-method", "contents": "collect { |${1:i}| ${2:i*i} }"},
+    {
+      "trigger": "collect",
+      "contents": "collect { |${1:i}| ${2:i*i} }"},
+
     // D
-    //{"trigger": "def-end\t \truby-block", "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend"},
-    {"trigger": "def-end\t \truby-block", "contents": "def ${1:self.}${2:class_method_name}${3:(${4:args})}\n  $0\nend"},
+    {
+      "trigger": "def",
+      "annotation": "def method_name(args)",
+      "kind": "snippet",
+      "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
+      "details": "Instance method"
+    },
+    {
+      "trigger": "def self",
+      "annotation": "def self.method_name(args)",
+      "kind": "snippet",
+      "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
+      "details": "Class method"
+    },
 
     // E
     {"trigger": "else\t \truby-method", "contents": "else\n${1:}"},
@@ -20,7 +53,7 @@
 
     // F
     {"trigger": "find\t \truby-method", "contents": "find(${1::id})"},
-    {"trigger": "frozen-string-literal\t \truby-comment", "contents": "# frozen_string_literal: ${1:true}$0"},
+    {"trigger": "frozen-string-literal\t \truby-comment", "contents": "# frozen_string_literal: ${1:true}  $0"},
     // G
     // H
     // I
@@ -30,14 +63,26 @@
     // J
     // K
     // L
-    {"trigger": "length\t \truby-method", "contents": "${1:length}"},
+    {"trigger": "length\t \truby-method", "contents": "${1:length} $0"},
     // M
     {"trigger": "map\t \truby-method", "contents": "map { |${1:i}| ${2:i*i} }$0"},
     // N
     // O
     // P
-    {"trigger": "private\t \truby-method", "contents": "${1:private}"},
-    {"trigger": "protected\t \truby-method", "contents": "${1:protected}"},
+    {
+      "trigger": "private",
+      "annotation": "ruby",
+      "contents": "${1:private}",
+      "kind": "keyword",
+      "details": "private"
+    },
+      {
+      "trigger": "protected",
+      "annotation": "ruby",
+      "contents": "${1:protected}",
+      "kind": "keyword",
+      "details": "protected"
+    },
     // Q
     // R
     // S
@@ -47,6 +92,13 @@
     // W
     // X
     // Y
+    {
+      "trigger": "yield",
+      "annotation": "ruby",
+      "contents": "${1:yield}",
+      "kind": "keyword",
+      "details": "yield"
+    },
     // Z
   ]
 }
