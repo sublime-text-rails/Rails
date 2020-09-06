@@ -15,8 +15,8 @@
     {"trigger": "def-end\t \truby-block", "contents": "def ${1:self.}${2:class_method_name}${3:(${4:args})}\n  $0\nend"},
 
     // E
-    {"trigger": "else\t \truby-method", "contents": "else"},
-    {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}"},
+    {"trigger": "else\t \truby-method", "contents": "else\n${1:}"},
+    {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}\n${2:}"},
 
     // F
     {"trigger": "find\t \truby-method", "contents": "find(${1::id})"},
