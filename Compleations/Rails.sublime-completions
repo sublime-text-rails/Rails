@@ -11,22 +11,26 @@
     {"trigger": "after-create\t \trails-method", "contents": "after_create :${1:method}"},
 
     // B
-    {"trigger": "before-action\t \trails method", "contents": "before_action :${1:method}"},
-    {"trigger": "before-block\t \trails method", "contents": "before do\n${1:}\nend"},
-    {"trigger": "before-create\t \trails method", "contents": "before_create :${1:method}"},
-    {"trigger": "before-destroy\t \trails method", "contents": "before_destroy ${1:}"},
-    {"trigger": "before-inline\t \trails method", "contents": "before { ${1:} }"},
-    {"trigger": "before-save\t \trails method", "contents": "before_save :${1:method}"},
-    {"trigger": "before-update\t \trails method", "contents": "before_update ${1:}"},
-    {"trigger": "before-validation\t \trails method", "contents": "before_validation :${1:method}"},
-    {"trigger": "before-validation-on-create\t \trails method", "contents": "before_validation ${1:validation_method}, on: :create"},
-    {"trigger": "before-validation-on-update\t \trails method", "contents": "before_validation ${1:validation_method}, on: :update"},
+    {"trigger": "before-action\t \trails-method", "contents": "before_action :${1:method}"},
+    {"trigger": "before-block\t \trails-method", "contents": "before do\n${1:}\nend"},
+    {"trigger": "before-create\t \trails-method", "contents": "before_create :${1:method}"},
+    {"trigger": "before-destroy\t \trails-method", "contents": "before_destroy ${1:}"},
+    {"trigger": "before-inline\t \trails-method", "contents": "before { ${1:} }"},
+    {"trigger": "before-save\t \trails-method", "contents": "before_save :${1:method}"},
+    {"trigger": "before-update\t \trails-method", "contents": "before_update ${1:}"},
+    {"trigger": "before-validation\t \trails-method", "contents": "before_validation :${1:method}"},
+    {"trigger": "before-validation-on-create\t \trails-method", "contents": "before_validation ${1:validation_method}, on: :create"},
+    {"trigger": "before-validation-on-update\t \trails-method", "contents": "before_validation ${1:validation_method}, on: :update"},
 
     // C
     // D
     // E
     // F
-    {"trigger": "frozen-string-literal", "contents": "# frozen_string_literal: true"},
+    {"trigger": "find-params\t \trails-method", "contents": "find(params[:${1:id}])"},
+    {"trigger": "find-by-params\t \trails-method", "contents": "find_by(params[:${1:id}])"},
+
+    // R
+    {"trigger": "root\t \trails-root", "contents": "root '${1:controller}#${2:action}'"},
 
   ]
 }
