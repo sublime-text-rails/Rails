@@ -3,86 +3,83 @@
   "completions":
   [
     // A
-    {
-      "trigger": "attr-accessor",
-      "annotation": "ruby",
-      "kind": "function",
-      "contents": "attr_accessor :${1:attribute_name}",
-      "details": "attr_accessor :attribute_name"
-    },
-    {
-      "trigger": "attr-reader",
-      "annotation": "ruby",
-      "kind": "function",
-      "contents": "attr_reader :${1:attribute_name}",
-      "details": "attr_reader :attribute_name"
-    },
-    {
-      "trigger": "attr-writer",
-      "annotation": "ruby",
-      "kind": "function",
-      "contents": "attr_writer :${1:attribute_name}",
-      "details": "attr_writer :attribute_name"
-    },
+    // {
+    //   "trigger": "attr-accessor",
+    //   "annotation": "ruby",
+    //   "kind": "function",
+    //   "contents": "attr_accessor :${1:attribute_name}",
+    //   "details": "attr_accessor :attribute_name"
+    // },
+    // {
+    //   "trigger": "attr-reader",
+    //   "annotation": "ruby",
+    //   "kind": "function",
+    //   "contents": "attr_reader :${1:attribute_name}",
+    //   "details": "attr_reader :attribute_name"
+    // },
+    // {
+    //   "trigger": "attr-writer",
+    //   "annotation": "ruby",
+    //   "kind": "function",
+    //   "contents": "attr_writer :${1:attribute_name}",
+    //   "details": "attr_writer :attribute_name"
+    // },
 
     // B
     // C
-    {
-      "trigger": "collect",
-      "contents": "collect { |${1:i}| ${2:i*i} }"},
+    // {
+    //   "trigger": "collect",
+    //   "annotation": "array method",
+    //   "kind": "function",
+    //   "contents": "collect { |${1:i}| ${2:i*i} }",
+    //   "details": "collect { |i| i*i }"
+    // },
 
-    // D
-    {
-      "trigger": "def",
-      "annotation": "def method_name(args)",
-      "kind": "snippet",
-      "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
-      "details": "Instance method"
-    },
-    {
-      "trigger": "def self",
-      "annotation": "def self.method_name(args)",
-      "kind": "snippet",
-      "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
-      "details": "Class method"
-    },
+    // // D
+    // {
+    //   "trigger": "def",
+    //   "annotation": "instance method",
+    //   "kind": "snippet",
+    //   "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
+    //   "details": "def method_name(args) ... end"
+    // },
+    // {
+    //   "trigger": "def",
+    //   "annotation": "class method",
+    //   "kind": "snippet",
+    //   "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
+    //   "details": "def self.method_name(args) ... end"
+    // },
 
     // E
-    {"trigger": "else\t \truby-method", "contents": "else\n${1:}"},
-    {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}\n${2:}"},
+    // {"trigger": "else\t \truby-method", "contents": "else\n${1:}"},
+    // {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}\n${2:}"},
 
     // F
-    {"trigger": "find\t \truby-method", "contents": "find(${1::id})"},
-    {"trigger": "frozen-string-literal\t \truby-comment", "contents": "# frozen_string_literal: ${1:true}  $0"},
+    // {"trigger": "find\t \truby-method", "contents": "find(${1::id})"},
+    {
+      "trigger": "frozen-string-literal",
+      "annotation": "",
+      "contents": "# frozen_string_literal: true\n$0",
+      "kind": "snippet",
+      "details": "# frozen_string_literal: true"
+    },
+
     // G
     // H
     // I
-    {"trigger": "if-end\t \truby-block", "contents": "if ${1:condition}\n  $0\nend"},
-    {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})$0"},
+    // {"trigger": "if-end\t \truby-block", "contents": "if ${1:condition}\n  $0\nend"},
+    // {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})$0"},
 
     // J
     // K
     // L
-    {"trigger": "length\t \truby-method", "contents": "${1:length} $0"},
+    // {"trigger": "length\t \truby-method", "contents": "${1:length} $0"},
     // M
-    {"trigger": "map\t \truby-method", "contents": "map { |${1:i}| ${2:i*i} }$0"},
+    // {"trigger": "map\t \truby-method", "contents": "map { |${1:i}| ${2:i*i} }$0"},
     // N
     // O
     // P
-    {
-      "trigger": "private",
-      "annotation": "ruby",
-      "contents": "${1:private}",
-      "kind": "keyword",
-      "details": "private"
-    },
-      {
-      "trigger": "protected",
-      "annotation": "ruby",
-      "contents": "${1:protected}",
-      "kind": "keyword",
-      "details": "protected"
-    },
     // Q
     // R
     // S
@@ -92,13 +89,6 @@
     // W
     // X
     // Y
-    {
-      "trigger": "yield",
-      "annotation": "ruby",
-      "contents": "${1:yield}",
-      "kind": "keyword",
-      "details": "yield"
-    },
     // Z
   ]
 }

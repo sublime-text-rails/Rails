@@ -1,3 +1,41 @@
 {
-
+  "scope": "text.html.ruby",
+  "completions":
+  [
+    {
+      "trigger": "erp",
+      "annotation": "<%=  %>",
+      "kind": "snippet",
+      "contents": "<%= $0 %>",
+      "details": "ERB output tag"
+    },
+    {
+      "trigger": "erb",
+      "annotation": "<%  %>",
+      "kind": "snippet",
+      "contents": "<% $0 %>",
+      "details": "ERB tag"
+    },
+    {
+      "trigger": "end",
+      "annotation": "<% end %>",
+      "kind": "snippet",
+      "contents": "<% end %>",
+      "details": "ERB end tag"
+    },
+    {
+      "trigger": "if-end",
+      "annotation": "<% if %> .. <% end %>",
+      "kind": "snippet",
+      "contents": "<% if %>\n\t$0\n<% end %>",
+      "details": "ERB if .. end tags"
+    },
+    {
+      "trigger": "if-else-end",
+      "annotation": "<% if %> .. <% else %> .. <% end %>",
+      "kind": "snippet",
+      "contents": "<% if %>\n\n<% else %>\n\n<% end %>",
+      "details": "ERB if .. else .. end tags"
+    },
+  ]
 }
