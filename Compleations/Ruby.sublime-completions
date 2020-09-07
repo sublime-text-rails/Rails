@@ -3,39 +3,46 @@
   "completions":
   [
     // A
-    // {
-    //   "trigger": "attr-accessor",
-    //   "annotation": "ruby",
-    //   "kind": "function",
-    //   "contents": "attr_accessor :${1:attribute_name}",
-    //   "details": "attr_accessor :attribute_name"
-    // },
-    // {
-    //   "trigger": "attr-reader",
-    //   "annotation": "ruby",
-    //   "kind": "function",
-    //   "contents": "attr_reader :${1:attribute_name}",
-    //   "details": "attr_reader :attribute_name"
-    // },
-    // {
-    //   "trigger": "attr-writer",
-    //   "annotation": "ruby",
-    //   "kind": "function",
-    //   "contents": "attr_writer :${1:attribute_name}",
-    //   "details": "attr_writer :attribute_name"
-    // },
+    {
+      "trigger": "attr-accessor",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_accessor :${1:attribute_name}",
+      "details": "attr_accessor :attribute_name"
+    },
+    {
+      "trigger": "attr-reader",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_reader :${1:attribute_name}",
+      "details": "attr_reader :attribute_name"
+    },
+    {
+      "trigger": "attr-writer",
+      "annotation": "ruby",
+      "kind": "function",
+      "contents": "attr_writer :${1:attribute_name}",
+      "details": "attr_writer :attribute_name"
+    },
 
     // B
     // C
-    // {
-    //   "trigger": "collect",
-    //   "annotation": "array method",
-    //   "kind": "function",
-    //   "contents": "collect { |${1:i}| ${2:i*i} }",
-    //   "details": "collect { |i| i*i }"
-    // },
+    {
+      "trigger": "collect",
+      "annotation": "array method",
+      "kind": "function",
+      "contents": "collect { |${1:i}| ${2:i*i} }",
+      "details": "collect { |i| i*i }"
+    },
 
-    // // D
+    // D
+
+    // The main def-class-method, when used with the tab key to cycle through
+    // hitting delete or modifying does everything in one completion.
+    //
+    // It could be made intelligent, so it only adds self if the method
+    // can be used as a class depending on specific scenarios.
+
     // {
     //   "trigger": "def",
     //   "annotation": "instance method",
@@ -43,16 +50,23 @@
     //   "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
     //   "details": "def method_name(args) ... end"
     // },
-    // {
-    //   "trigger": "def",
-    //   "annotation": "class method",
-    //   "kind": "snippet",
-    //   "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
-    //   "details": "def self.method_name(args) ... end"
-    // },
+
+    {
+      "trigger": "def",
+      "annotation": "class method",
+      "kind": "snippet",
+      "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
+      "details": "def self.method_name(args) ... end"
+    },
 
     // E
-    // {"trigger": "else\t \truby-method", "contents": "else\n${1:}"},
+    // {
+    //   "trigger": "else",
+    //   "annotation": "block keyword",
+    //   "kind": "keyword",
+    //   "contents": "else\n${1:}",
+    //   "details": "else"
+    // },
     // {"trigger": "elsif\t \truby-method", "contents": "elsif ${1:condition}\n${2:}"},
 
     // F
