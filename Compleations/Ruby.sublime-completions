@@ -43,21 +43,28 @@
     // It could be made intelligent, so it only adds self if the method
     // can be used as a class depending on specific scenarios.
 
-    // {
-    //   "trigger": "def",
-    //   "annotation": "instance method",
-    //   "kind": "snippet",
-    //   "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
-    //   "details": "def method_name(args) ... end"
-    // },
+    {
+      "trigger": "def-instance",
+      "annotation": "instance method",
+      "kind": "snippet",
+      "contents": "def ${1:method_name}${2:(${3:args})}\n  $0\nend",
+      "details": "def method_name(args) ... end"
+    },
 
     {
-      "trigger": "def",
+      "trigger": "def-class",
       "annotation": "class method",
       "kind": "snippet",
-      "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
+      "contents": "def self.${1:method_name}${2:(${3:args})}\n  $0\nend",
       "details": "def self.method_name(args) ... end"
     },
+    // {
+    //   "trigger": "def-class",
+    //   "annotation": "class method",
+    //   "kind": "snippet",
+    //   "contents": "def ${1:self.}${2:method_name}${3:(${4:args})}\n  $0\nend",
+    //   "details": "def self.method_name(args) ... end"
+    // },
 
     // E
     // {
@@ -82,7 +89,13 @@
     // G
     // H
     // I
-    // {"trigger": "if-end\t \truby-block", "contents": "if ${1:condition}\n  $0\nend"},
+    {
+      "trigger": "if-end",
+      "annotation": "",
+      "contents": "if ${1:condition}\n  $0\nend",
+      "kind": "snippet",
+      "details": "if ... end"
+    },
     // {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})$0"},
 
     // J
