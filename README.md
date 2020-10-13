@@ -1,20 +1,13 @@
 # Sublime Text - Rails Pack
-This package improves Ruby and Rails specific code completions in Sublime Text 3
+Adds Ruby 2.x and Rails 6 code completions in Sublime Text 4
 
 Feel free to contribute by creating issues, and fixes via pull requests, see the contributing guide for more information.
 
 ## What This Package Does
-The contents of this repository can be used to kill the default Rails auto complete code snippets that ship with Sublime Text, this makes way for a fresh set of completions to be used directly from GitHub, allowing open-source maintainers to keep the code up-to-date as changes occur.
 
-- Kills the outdated default Rails snippets.
 - Adds new Rails code completions.
 - Adds new Ruby code completions.
-- Adds modern ERB code completions.
-
-## Smart Code Completions
-- Where relevant code completions are ERB, model, controller, and database specific.
-- Using the tab key to auto complete, then tab again to cycle through preset tab locations for cursor positions and highlighting variables that should be customized.
-- Multi point editing on completions.
+- Adds new ERB code completions.
 
 ## Usage
 - Clone this repository to your desktop.
