@@ -24,18 +24,39 @@
       "details": "ERB end tag"
     },
     {
-      "trigger": "if-end",
-      "annotation": "<% if %> .. <% end %>",
+      "trigger": "else",
+      "annotation": "<% else %>",
       "kind": "snippet",
-      "contents": "<% if %>\n\t$0\n<% end %>",
-      "details": "ERB if .. end tags"
+      "contents": "<% else %>",
+      "details": "ERB else tag"
     },
     {
-      "trigger": "if-else-end",
-      "annotation": "<% if %> .. <% else %> .. <% end %>",
+      "trigger": "else-if",
+      "annotation": "<% elsif %>",
       "kind": "snippet",
-      "contents": "<% if %>\n\n<% else %>\n\n<% end %>",
-      "details": "ERB if .. else .. end tags"
+      "contents": "<% elsif %>",
+      "details": "ERB elsif tag"
     },
+    {
+      "trigger": "if",
+      "annotation": "<% if %>",
+      "kind": "snippet",
+      "contents": "<% if %>",
+      "details": "ERB if tag"
+    },
+    // {
+    //   "trigger": "if-end",
+    //   "annotation": "<% if %> .. <% end %>",
+    //   "kind": "snippet",
+    //   "contents": "<% if %>\n\t$0\n<% end %>",
+    //   "details": "ERB if .. end tags"
+    // },
+    // {
+    //   "trigger": "if-else-end",
+    //   "annotation": "<% if %> .. <% else %> .. <% end %>",
+    //   "kind": "snippet",
+    //   "contents": "<% if %>\n\n<% else %>\n\n<% end %>",
+    //   "details": "ERB if .. else .. end tags"
+    // },
   ]
 }

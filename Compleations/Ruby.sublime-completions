@@ -96,7 +96,7 @@
       "kind": "snippet",
       "details": "if ... end"
     },
-    // {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})$0"},
+    {"trigger": "include?\t \truby-method", "contents": "include?(${1:condition})$0"},
 
     // J
     // K
@@ -107,6 +107,7 @@
     // N
     // O
     // P
+    {"trigger": "present?\t \truby-method", "contents": "present?$0"},
     // Q
     // R
     // S
