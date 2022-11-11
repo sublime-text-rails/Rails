@@ -1,5 +1,5 @@
 {
-  "scope": "text.html.ruby",
+  "scope": "text.html.rails",
   "completions":
   [
     {
@@ -44,19 +44,12 @@
       "contents": "<% if %>",
       "details": "ERB if tag"
     },
-    // {
-    //   "trigger": "if-end",
-    //   "annotation": "<% if %> .. <% end %>",
-    //   "kind": "snippet",
-    //   "contents": "<% if %>\n\t$0\n<% end %>",
-    //   "details": "ERB if .. end tags"
-    // },
-    // {
-    //   "trigger": "if-else-end",
-    //   "annotation": "<% if %> .. <% else %> .. <% end %>",
-    //   "kind": "snippet",
-    //   "contents": "<% if %>\n\n<% else %>\n\n<% end %>",
-    //   "details": "ERB if .. else .. end tags"
-    // },
+    {
+      "trigger": "i18",
+      "annotation": "<% i18n.t %>",
+      "kind": "snippet",
+      "contents": "<%= I18n.t('') %>",
+      "details": "ERb i18n tag"
+    }
   ]
 }
