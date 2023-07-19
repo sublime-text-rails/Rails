@@ -3,35 +3,35 @@
   "completions":
   [
     {
-      "trigger": "erp",
+      "trigger": "ep",
       "annotation": "<%=  %>",
       "kind": "snippet",
       "contents": "<%= $0 %>",
       "details": "ERB output tag"
     },
     {
-      "trigger": "erb",
+      "trigger": "eb",
       "annotation": "<%  %>",
       "kind": "snippet",
       "contents": "<% $0 %>",
       "details": "ERB tag"
     },
     {
-      "trigger": "end",
+      "trigger": "ed",
       "annotation": "<% end %>",
       "kind": "snippet",
       "contents": "<% end %>",
       "details": "ERB end tag"
     },
     {
-      "trigger": "else",
+      "trigger": "el",
       "annotation": "<% else %>",
       "kind": "snippet",
       "contents": "<% else %>",
       "details": "ERB else tag"
     },
     {
-      "trigger": "else-if",
+      "trigger": "ef",
       "annotation": "<% elsif %>",
       "kind": "snippet",
       "contents": "<% elsif %>",
