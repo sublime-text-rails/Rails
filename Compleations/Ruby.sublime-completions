@@ -108,6 +108,11 @@
       "kind": ["function", "m", "method"],
       "contents": "present?$0"
     },
+    {
+      "trigger": "pry",
+      "kind": ["function", "m", "method"],
+      "contents": "binding.pry$0"
+    },
     // Q
     // R
     // S
